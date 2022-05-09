@@ -61,7 +61,6 @@ def player_turn():
             num = 8
 
     board_rep[num] = 'X'
-    print(board_rep)
 
     board_spots[spot_one, spot_two] = 'X'
     board = (f"{board_spots[0, 0]}  |  {board_spots[0, 1]}  |  {board_spots[0, 2]}\n"
@@ -78,8 +77,6 @@ def computer_turn():
     computer_player = True
 
     computer_move = minimax(computer_player)['position']
-
-    print(computer_move)
 
     board_rep[computer_move] = 'O'
 
